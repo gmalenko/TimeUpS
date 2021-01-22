@@ -69,7 +69,7 @@ namespace TimeUpS
 
             calendarDateAdd.WorkingHours.Add(new HourRange(new Time(8, 0, 0), new Time(12, 0, 0, 0)));
             calendarDateAdd.WorkingHours.Add(new HourRange(new Time(13, 0, 0), new Time(17, 0, 0)));
-            TimeSpan offset = new TimeSpan(0, minutes, 0); // 22 hours
+            TimeSpan offset = new TimeSpan(0, minutes, 0);
 
             DateTime? end = calendarDateAdd.Add(start, offset);
             return end.Value;
